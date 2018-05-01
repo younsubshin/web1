@@ -1,0 +1,53 @@
+#Project
+h1 이회영과 그의 형제들
+h3 만주로 간 까닭은 무엇일까
+
+#Class 
+노래	olive star
+인물	crimson	circle
+장소	blue	rect
+사건	orange	rect
+문헌	brown	rect
+기관	violet	square
+
+#Relation 
+~이_그렸다	magenta	arrow
+~을_담았다	olive	arrow	1
+~을_섬겼다	red	arrow
+~을_겪었다	orange	arrow
+~을_불렀다	brown 	arrow
+~에_있다	cyan	line	1
+~에_살았다	cyan	line	1
+~에_잠들다	cyan	line
+
+#Nodes
+001	노래	꿈꾼세상        	https://youtu.be/RwUGSYDKUxU	john.jpg	0
+002	인물	이시영			https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9C%EC%98%81_(1868%EB%85%84)	이시영.jpg	0
+003	인물	이회영			https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%9A%8C%EC%98%81	이회영.jpg	0
+004	인물	고종			https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EC%A0%9C%EA%B5%AD_%EA%B3%A0%EC%A2%85	고종.jpg	0
+005	사건	신유박해		http://encykorea.aks.ac.kr/Contents/Index?contents_id=E0033249	신유박해xs.jpg	0
+006	노래	드래곤   		https://youtu.be/ZWwC-dk83Eo      	드래곤.jpg	0
+007	노래	아임유어		https://youtu.be/NLfaLVgSRaY	머라즈.jpg	0
+008	노래	로이킴  		https://youtu.be/Y4GGLCOO_T4	fixyou.jpg	0
+009	장소	만주    		https://ko.wikipedia.org/wiki/%EB%A7%8C%EC%A3%BC	만주1.jpg	0
+010	장소	동상     		https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80	동상.jpg	0
+011	장소	신흥무관학교		https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%9D%A5%EB%AC%B4%EA%B4%80%ED%95%99%EA%B5%90 	신흥학교.jpg	0
+013	장소	뤼순감옥		https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80	감옥.jpg	0
+015	기관	우당기념관		http://www.woodang.or.kr/	우당기념관.jpg	0
+
+#Links
+001          002          ~이_그렸다
+001          003          ~을_담았다
+001          009          ~을_담았다
+001          015          ~에_있다
+003          004          ~을_섬겼다
+003          005          ~을_겪었다
+003          006          ~을_지었다
+003          007          ~을_지었다
+003          008          ~을_지었다
+003          009          ~에_살았다
+003          010          ~에_잠들다
+009          011          ~에_있다
+010          013          ~에_있다
+
+#End
