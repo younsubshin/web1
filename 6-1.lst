@@ -1,0 +1,57 @@
+#Project
+h1 금병초 6학년 역사수업
+h2    과거+현재=미래
+
+#Class 
+노래	olive star
+인물	crimson	circle
+장소	blue	rect
+사건	orange	hexa
+문헌	brown	rect
+기관	violet	rect
+
+#Relation 
+~이_그렸다	magenta	arrow
+~에_다닌다	olive	arrow	1
+~을_섬겼다	red	arrow
+~을_겪었다	orange	arrow
+~을_불렀다	brown 	arrow
+~에_있다	cyan	line	1
+~에_살았다	cyan	line	1
+~에_잠들다	cyan	line
+
+#Nodes
+001	노래	6학년           	https://youtu.be/RwUGSYDKUxU	john.jpg	0
+002	인물	이시영			https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9C%EC%98%81_(1868%EB%85%84)	이시영.jpg	0
+003	인물	금병초등학교		http://gbcho.gwe.es.kr	배경21.jpg	0
+004	인물	고종			https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EC%A0%9C%EA%B5%AD_%EA%B3%A0%EC%A2%85	고종.jpg	0
+005	사건    삼일운동		http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%A7%8C%EC%A3%BC%EC%82%AC%EB%B3%80&ridx=2&tot=318	옥호루.jpg	0
+006	노래	드래곤   		https://youtu.be/ZWwC-dk83Eo      	드래곤.jpg	0
+007	노래	아임유어		https://youtu.be/NLfaLVgSRaY	머라즈.jpg	0
+008	노래	로이킴  		https://youtu.be/Y4GGLCOO_T4	fixyou.jpg	0
+009	장소	위치    		https://ko.wikipedia.org/wiki/%EB%A7%8C%EC%A3%BC	만주.jpg	0
+010	장소	동상     		https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80	동상.jpg	0
+011	장소	신흥무관학교		https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%9D%A5%EB%AC%B4%EA%B4%80%ED%95%99%EA%B5%90 	신흥학교.jpg	0
+012     노래    통일                    https://youtu.be/Jg0AqlFGsro  통일.jpg  0
+013	장소	뤼순감옥		https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80	감옥.jpg	0
+014     장소    금병초교                https://younsubshin.github.io/web1/     이어짐.jpg  0
+015	기관	우당기념관		http://www.woodang.or.kr/	우당기념관.jpg	0
+
+#Links
+001          002          ~이_그렸다
+001          003          ~에_다닌다
+001          009          ~에_다닌다
+001          012          ~에_다닌다
+001          015          ~에_있다
+003          004          ~을_섬겼다
+003          005          ~을_겪었다
+003          006          ~을_불렀다
+003          007          ~을_불렀다
+003          008          ~을_불렀다
+003          009          ~에_살았다
+003          010          ~에_잠들다
+009          011          ~에_있다
+010          013          ~에_있다
+012          014          ~에_있다
+
+#End
