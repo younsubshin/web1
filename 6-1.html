@@ -14,7 +14,7 @@
       td {font: 12pt 맑은 고딕; text-align: center;}
     </style>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://dh.aks.ac.kr/Graph/network/network.js"></script>
+    <script type="text/javascript" src="">https://younsubshin.github.io/web1/</script>
     <script type="text/javascript">
       var nodesTable = null;
       var linksTable = null;
@@ -29,27 +29,31 @@
         nodesTable.addColumn('string', 'id');
         nodesTable.addColumn('string', 'group');
         nodesTable.addColumn('string', 'text');
-        nodesTable.addColumn('string', 'title'); 
-        nodesTable.addColumn('string', 'style'); 
-        nodesTable.addColumn('string', 'image'); 
-        nodesTable.addColumn('string', 'url'); 
+        nodesTable.addColumn('string', 'title');
+        nodesTable.addColumn('string', 'style');
+        nodesTable.addColumn('string', 'image');
+        nodesTable.addColumn('string', 'url');
 
         nodesTable.addRow(['00000', 'dummy', '', '', 'dot', '', '']);
-        nodesTable.addRow(['001', '노래', '6학년', '<a href="https://youtu.be/RwUGSYDKUxU" target="_blank"><img src="john.jpg"/></a>', 'star', 'john.jpg', 'https://youtu.be/RwUGSYDKUxU']);
-        nodesTable.addRow(['002', '인물', '이시영', '<a href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9C%EC%98%81_(1868%EB%85%84)" target="_blank"><img src="이시영.jpg"/></a>', 'circle', '이시영.jpg', 'https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9C%EC%98%81_(1868%EB%85%84)']);
-        nodesTable.addRow(['003', '인물', '금병초등학교', '<a href="http://gbcho.gwe.es.kr" target="_blank"><img src="배경21.jpg"/></a>', 'circle', '배경21.jpg', 'http://gbcho.gwe.es.kr']);
-        nodesTable.addRow(['004', '인물', '고종', '<a href="https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EC%A0%9C%EA%B5%AD_%EA%B3%A0%EC%A2%85" target="_blank"><img src="고종.jpg"/></a>', 'circle', '고종.jpg', 'https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EC%A0%9C%EA%B5%AD_%EA%B3%A0%EC%A2%85']);
-        nodesTable.addRow(['005', '사건', '삼일운동', '<a href="http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%A7%8C%EC%A3%BC%EC%82%AC%EB%B3%80&ridx=2&tot=318" target="_blank"><img src="옥호루.jpg"/></a>', 'hexa', '옥호루.jpg', 'http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%A7%8C%EC%A3%BC%EC%82%AC%EB%B3%80&ridx=2&tot=318']);
-        nodesTable.addRow(['006', '노래', '드래곤', '<a href="https://youtu.be/ZWwC-dk83Eo" target="_blank"><img src="드래곤.jpg"/></a>', 'star', '드래곤.jpg', 'https://youtu.be/ZWwC-dk83Eo']);
-        nodesTable.addRow(['007', '노래', '아임유어', '<a href="https://youtu.be/NLfaLVgSRaY" target="_blank"><img src="머라즈.jpg"/></a>', 'star', '머라즈.jpg', 'https://youtu.be/NLfaLVgSRaY']);
-        nodesTable.addRow(['008', '노래', '로이킴', '<a href="https://youtu.be/Y4GGLCOO_T4" target="_blank"><img src="fixyou.jpg"/></a>', 'star', 'fixyou.jpg', 'https://youtu.be/Y4GGLCOO_T4']);
-        nodesTable.addRow(['009', '장소', '위치', '<a href="https://ko.wikipedia.org/wiki/%EB%A7%8C%EC%A3%BC" target="_blank"><img src="만주.jpg"/></a>', 'rect', '만주.jpg', 'https://ko.wikipedia.org/wiki/%EB%A7%8C%EC%A3%BC']);
-        nodesTable.addRow(['010', '장소', '동상', '<a href="https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80" target="_blank"><img src="동상.jpg"/></a>', 'rect', '동상.jpg', 'https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80']);
-        nodesTable.addRow(['011', '장소', '신흥무관학교', '<a href="https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%9D%A5%EB%AC%B4%EA%B4%80%ED%95%99%EA%B5%90" target="_blank"><img src="신흥학교.jpg"/></a>', 'rect', '신흥학교.jpg', 'https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%9D%A5%EB%AC%B4%EA%B4%80%ED%95%99%EA%B5%90']);
-        nodesTable.addRow(['012', '노래', '통일', '<a href="https://youtu.be/Jg0AqlFGsro" target="_blank"><img src="통일.jpg"/></a>', 'star', '통일.jpg', 'https://youtu.be/Jg0AqlFGsro']);
-        nodesTable.addRow(['013', '장소', '뤼순감옥', '<a href="https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80" target="_blank"><img src="감옥.jpg"/></a>', 'rect', '감옥.jpg', 'https://ko.wikipedia.org/wiki/%EB%A4%BC%EC%88%9C_%EA%B0%90%EC%98%A5#%EC%88%98%EA%B0%90%EB%90%98%EC%97%88%EB%8D%98_%ED%95%9C%EA%B5%AD%EC%9D%98_%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99%EA%B0%80']);
-        nodesTable.addRow(['014', '장소', '금병초교', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="이어짐.jpg"/></a>', 'rect', '이어짐.jpg', 'https://younsubshin.github.io/web1/']);
-        nodesTable.addRow(['015', '기관', '우당기념관', '<a href="http://www.woodang.or.kr/" target="_blank"><img src="우당기념관.jpg"/></a>', 'rect', '우당기념관.jpg', 'http://www.woodang.or.kr/']);
+        nodesTable.addRow(['001', '장소', '금병초교', '<a href="http://gbcho.gwe.es.kr/main.do" target="_blank"><img src="전경.png"/></a>', 'circle', '전경.png', 'http://gbcho.gwe.es.kr/main.do']);
+        nodesTable.addRow(['002', '인물', '강태희', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="권준석.png"/></a>', 'star', '권준석.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['003', '인물', '구기혁', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="김민진.png"/></a>', 'star', '김민진.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['004', '인물', '길우진', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="김슬비.png"/></a>', 'star', '김슬비.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['005', '인물', '김도현', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="김여준.png"/></a>', 'star', '김여준.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['006', '인물', '감동우', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="박민주.png"/></a>', 'star', '박민주.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['007', '인물', '김아연', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="박하진.png"/></a>', 'star', '박하진.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['008', '인물', '김주은', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="배윤호.png"/></a>', 'star', '배윤호.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['009', '인물', '박민서', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="서희지.png"/></a>', 'star', '서희지.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0010', '인물', '서희지', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="심담.png"/></a>', 'star', '심담.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0011', '인물', '성수아', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="안해민.png"/></a>', 'star', '안해민.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0012', '인물', '신민규', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="이어진.png"/></a>', 'star', '이어진.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0013', '인물', '오희수', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="이재용.png"/></a>', 'star', '이재용.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0014', '인물', '이예담', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="정별하.png"/></a>', 'star', '정별하.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0015', '인물', '이준민', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="조세라.png"/></a>', 'star', '조세라.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0016', '인물', '정하람', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="함상민.png"/></a>', 'star', '함상민.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0017', '인물', '강준서', '<a href="sample1.htm#" target="_blank"><img src="황준호.png"/></a>', 'star', '황준호.png', 'sample1.htm#']);
+        nodesTable.addRow(['0018', '사건', '신윤섭', '<a href="https://younsubshin.github.io/web1/" target="_blank"><img src="신윤섭.png"/></a>', 'hexa', '신윤섭.png', 'https://younsubshin.github.io/web1/']);
+        nodesTable.addRow(['0019', '기관', '6학년2반', '<a href="6-2.htm#6학년2반" target="_blank"><img src="66-2.jpg"/></a>', 'rect', '66-2.jpg', '6-2.htm#6학년2반']);
 
         linksTable = new google.visualization.DataTable();
         linksTable.addColumn('string', 'from');
@@ -59,21 +63,24 @@
         linksTable.addColumn('string', 'title');
         linksTable.addColumn('string', 'text');
 
-        linksTable.addRow(['001', '002', 'magenta', 'arrow', '~이 그렸다', '']);
-        linksTable.addRow(['001', '003', 'olive', 'arrow', '~에 다닌다', '~에 다닌다']);
-        linksTable.addRow(['001', '009', 'olive', 'arrow', '~에 다닌다', '~에 다닌다']);
-        linksTable.addRow(['001', '012', 'olive', 'arrow', '~에 다닌다', '~에 다닌다']);
-        linksTable.addRow(['001', '015', 'cyan', 'line', '~에 있다', '~에 있다']);
-        linksTable.addRow(['003', '004', 'red', 'arrow', '~을 섬겼다', '']);
-        linksTable.addRow(['003', '005', 'orange', 'arrow', '~을 겪었다', '']);
-        linksTable.addRow(['003', '006', 'brown', 'arrow', '~을 불렀다', '']);
-        linksTable.addRow(['003', '007', 'brown', 'arrow', '~을 불렀다', '']);
-        linksTable.addRow(['003', '008', 'brown', 'arrow', '~을 불렀다', '']);
-        linksTable.addRow(['003', '009', 'cyan', 'line', '~에 살았다', '~에 살았다']);
-        linksTable.addRow(['003', '010', 'cyan', 'line', '~에 잠들다', '']);
-        linksTable.addRow(['009', '011', 'cyan', 'line', '~에 있다', '~에 있다']);
-        linksTable.addRow(['010', '013', 'cyan', 'line', '~에 있다', '~에 있다']);
-        linksTable.addRow(['012', '014', 'cyan', 'line', '~에 있다', '~에 있다']);
+        linksTable.addRow(['002', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['003', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['004', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['005', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['006', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['007', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['008', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['009', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0010', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0011', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0012', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0013', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0014', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0015', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0016', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0017', '001', 'blue', 'moving-arrows', '~에 다니다', '~에 다니다']);
+        linksTable.addRow(['0017', '0018', 'red', 'moving-arrows', '~에 배우다', '~에 배우다']);
+        linksTable.addRow(['0018', '0019', 'orange', 'arrow', '~을 가르치다', '']);
 
         var options = {
             'width': '100',  'height': '520px',  'stabilize': false,  'selectable': true,
@@ -81,8 +88,8 @@
             'nodes': { 'backgroundColor': 'white',  'highlightColor': 'gold', 'fontFace': '함초롬바탕', 'fontSize': 15, 'fontColor': 'black', },
             'groups': {
                 '노래': { 'style': 'star', 'borderColor': 'olive',  'radius': 15 },
-                '인물': { 'style': 'circle', 'borderColor': 'crimson',  'radius': 15 },
-                '장소': { 'style': 'rect', 'borderColor': 'blue',  'radius': 15 },
+                '인물': { 'style': 'star', 'borderColor': 'brown',  'radius': 15 },
+                '장소': { 'style': 'circle', 'borderColor': 'red',  'radius': 15 },
                 '사건': { 'style': 'hexa', 'borderColor': 'orange',  'radius': 15 },
                 '문헌': { 'style': 'rect', 'borderColor': 'brown',  'radius': 15 },
                 '기관': { 'style': 'rect', 'borderColor': 'violet',  'radius': 15 },
@@ -116,9 +123,9 @@
 <body>
 
 
-    <h1 style="text-align: center;">금병초 6학년 역사수업
+    <h1 style="text-align: center;">금병초등학교
 </h1>
-    <h2 style="text-align: center;">과거+현재=미래
+    <h2 style="text-align: center;">6학년 1반
 </h2>
 
 
