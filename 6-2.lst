@@ -1,0 +1,62 @@
+#Project
+h1 금병초등학교
+h2 6학년 2반
+
+#Class 
+노래	olive star
+인물	blue	hexa
+장소	red	circle
+사건	orange	hexa
+문헌	brown	rect
+기관	violet	rect
+
+#Relation 
+~이_그렸다	magenta	arrow
+~을_담았다	olive	arrow	1
+~에_배우다	red	moving-arrows	1
+~을_갈치다	orange	arrow
+~을_불렀다	brown 	arrow
+~에_다니다	green	moving-arrows	1
+~에_살았다	cyan	line	1
+~에_잠들다	cyan	line
+
+#Nodes
+001      장소    금병초교                http://gbcho.gwe.es.kr/main.do          전경.png    0
+002      인물    권준석                  https://younsubshin.github.io/web1/     권준석.png  0
+003      인물    김민진                  https://younsubshin.github.io/web1/     김민진.png  0
+004      인물    김슬비                  https://younsubshin.github.io/web1/     김슬비.png  0
+005      인물    김여준                  https://younsubshin.github.io/web1/     김여준.png  0
+006      인물    박민주                  https://younsubshin.github.io/web1/     박민주.png  0
+007      인물    박하진                  https://younsubshin.github.io/web1/     박하진.png  0
+008      인물    배윤호                  https://younsubshin.github.io/web1/     배윤호.png  0
+009      인물    서희지                  https://younsubshin.github.io/web1/     서희지.png  0 
+0010     인물    심담                    https://younsubshin.github.io/web1/     심담.png    0 
+0011     인물    안해민                  https://younsubshin.github.io/web1/     안해민.png  0
+0012     인물    이어진                  https://younsubshin.github.io/web1/     이어진.png  0 
+0013     인물    이재용                  https://younsubshin.github.io/web1/     이재용.png  0
+0014     인물    정별하                  https://younsubshin.github.io/web1/     정별하.png  0
+0015     인물    조세라                  https://younsubshin.github.io/web1/     조세라.png  0
+0016     인물    함상민                  https://younsubshin.github.io/web1/     함상민.png  0 
+0017     인물    황준호                  https://younsubshin.github.io/web1/     황준호.png  0
+0018     사건    신윤섭                  https://younsubshin.github.io/web1/     신윤섭.png  0
+
+#Links
+002          001          ~에_다니다
+003          001          ~에_다니다
+004          001          ~에_다니다
+005          001          ~에_다니다
+006          001          ~에_다니다
+007          001          ~에_다니다
+008          001          ~에_다니다
+009          001          ~에_다니다
+0010         001          ~에_다니다
+0011         001          ~에_다니다
+0012         001          ~에_다니다
+0013         001          ~에_다니다
+0014         001          ~에_다니다
+0015         001          ~에_다니다
+0016         001          ~에_다니다
+0017         001          ~에_다니다
+0017         0018         ~에_배우다
+
+#End
