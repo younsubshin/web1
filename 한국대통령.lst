@@ -1,0 +1,46 @@
+#Project
+h1 대한민국 역대 대통령 
+
+#Class
+사람   green   circle		
+군인   blue     rect		
+부인   red      star            
+사건   indigo   star           
+작품   violet   cirlce         
+
+
+#Relation
+취임하다    black     line
+
+
+#Nodes
+H10  사람 이명박  #   남.png	1
+H2   사람 윤보선  #   남.png	1
+S1   군인 박정희  #   남.png	1
+H4   사람 최규하  #   남.png    1
+H1   사람 이승만  #   남.png    1
+S3   군인 노태우  #   남.png    1
+S2   군인 전두환  #   남.png    1
+H8   사람 김대중  #   남.png    1
+H9   사람 노무현  #   남.png    1
+H12  사람 문재인  #   남.png    1
+H7   사람 김영삼  #   남.png    1
+H11  사람 박근혜  #   여.png    1
+M1   작품 ship    #   sail.gif    1
+ 
+#Links
+M1 H10  취임하다	
+M1 H2   취임하다 	
+M1 S1  	취임하다
+M1 H4   취임하다
+M1 H1   취임하다	
+M1 S3   취임하다	
+M1 S2   취임하다	
+M1 H8   취임하다	
+M1 H9  	취임하다
+M1 H12 	취임하다
+M1 H7   취임하다
+M1 H11  취임하다	
+  
+
+#End
