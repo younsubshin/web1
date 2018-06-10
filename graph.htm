@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+    <title>Simple Ontology Visualization: Type 1</title>
+    <meta name="description" content="Google Visualization API Script"/>
+    <meta name="author" content="Cultural Information Laboratory, AKS"/>
+    <style>
+      body {font: 10pt 함초롬바탕;}
+      table {border: 0; width: 100%;}
+      tr:nth-child(even){background-color: #efefef;}
+      td {font: 12pt 맑은 고딕; text-align: center;}
+    </style>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://dh.aks.ac.kr/Graph/network/network.js"></script>
+    <script type="text/javascript">
+      var nodesTable = null;
+      var linksTable = null;
+      var network = null;
+
+      google.load('visualization', '1');
+      google.setOnLoadCallback(draw);
+
+      function draw() {
+
+        nodesTable = new google.visualization.DataTable();
+        nodesTable.addColumn('string', 'id');
+        nodesTable.addColumn('string', 'group');
+        nodesTable.addColumn('string', 'text');
+        nodesTable.addColumn('string', 'title');
+        nodesTable.addColumn('string', 'style');
+        nodesTable.addColumn('string', 'image');
+        nodesTable.addColumn('string', 'url');
+
+        nodesTable.addRow(['00000', 'dummy', '', '', '', '', '']);
+        nodesTable.addRow(['H1', '사람', '철수', '<a href="sample1.htm#Chel-su" target="_blank"><img src="Cheol.png"/></a>', '', 'Cheol.png', 'sample1.htm#Chel-su']);
+        nodesTable.addRow(['H2', '사람', '영이', '<a href="sample1.htm#Yeong-i" target="_blank"><img src="Yeong.png"/></a>', '', 'Yeong.png', 'sample1.htm#Yeong-i']);
+        nodesTable.addRow(['M1', '음식', '커피', '<a href="sample1.htm#Coffee" target="_blank"><img src="Coffee.png"/></a>', '', 'Coffee.png', 'sample1.htm#Coffee']);
+        nodesTable.addRow(['M2', '음식', '아이스크림', '<a href="sample1.htm#IceCream" target="_blank"><img src="Icecream.png"/></a>', '', 'Icecream.png', 'sample1.htm#IceCream']);
+
+        linksTable = new google.visualization.DataTable();
+        linksTable.addColumn('string', 'from');
+        linksTable.addColumn('string', 'to');
+        linksTable.addColumn('string', 'color');
+        linksTable.addColumn('string', 'style');
+        linksTable.addColumn('string', 'title');
+        linksTable.addColumn('string', 'text');
+
+        linksTable.addRow(['H1', 'M2', 'pink', 'arrow', '좋아한다', '']);
+        linksTable.addRow(['H2', 'M1', 'pink', 'arrow', '좋아한다', '']);
+        linksTable.addRow(['H1', 'H2', 'red', 'moving-arrows', '사랑한다', '']);
+
+        var options = {
+            'width': '100',  'height': '540px',  'stabilize': false,  'selectable': true,
+            'links': { 'length': 150,  'width': 1, 'fontFace': '맑은 고딕', 'fontSize': 15, 'fontColor': 'darkcyan', },
+            'nodes': { 'backgroundColor': 'white',  'highlightColor': 'gold', 'fontFace': '함초롬바탕', 'fontSize': 15, 'fontColor': 'black', },
+            'groups': {
+                '사람': { 'borderColor': 'green',  'style': 'circle', 'radius': 15 },
+                '음식': { 'borderColor': 'blue',  'style': 'rect', 'radius': 15 },
+                'dummy': { 'borderColor': 'white',  'style': 'dot', 'radius': 1 },
+            },
+        };
+
+       network = new links.Network(document.getElementById('mynetwork'));
+       network.draw(nodesTable, linksTable, options);
+
+       network = new links.Network(document.getElementById('mynetwork'));
+       google.visualization.events.addListener(network, 'select', onselect);
+       network.draw(nodesTable, linksTable, options);
+       var selection = [{'row': 0}];
+       network.setSelection(selection);
+
+      }
+
+		function onselect() {
+        	var sel = network.getSelection();
+        	var nodeName = nodesTable.getValue(sel[0].row, 3);
+        	var image = nodesTable.getValue(sel[0].row, 5);
+        	var refurl = nodesTable.getValue(sel[0].row, 6);
+			document.getElementById('info').innerHTML = '';
+			document.getElementById('info').innerHTML += nodeName;
+		}
+
+    </script>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">나의 첫번째 네트워크 그래프
+</h1>
+
+    <table>
+			<tr height="520"><td><div id="mynetwork"></div></td></tr>
+			<tr height="120"><td><div id="info"></div></td></tr>
+    </table>
+
+</body>
+</html>
